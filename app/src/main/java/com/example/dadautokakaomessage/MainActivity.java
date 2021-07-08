@@ -31,7 +31,9 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,6 +91,18 @@ Button send;
         spinner.setAdapter(adapter);
         spinner2.setAdapter(adapter2);
         spinner3.setAdapter(adapter3);
+
+        //    Step1. 현재 시간 가져오기.
+
+        long now = System.currentTimeMillis();
+//    Step2. Date 생성하기
+
+        Date date = new Date(now);
+//    Step3. 가져오고 싶은 형식으로 가져오기
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+        String getTime = sdf.format(date);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -148,7 +162,7 @@ Button send;
 
 
                 // text 문자열에 보낼 문자열 저장
-                text += "0. 일시 :  2021. 07.03.토 "+ time +" CBM\n";
+                text += "0. 일시 : "+getTime +" "+ time +" CBM\n";
                 text += "1. Cell짱 : ###\n";
                 text += "2. 업체명 :\n";
                 text += "- ##건설 (#,#,#)\n";

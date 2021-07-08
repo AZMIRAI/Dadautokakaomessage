@@ -18,14 +18,13 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
-
+        app:layout_constraintVertical_bias="0.532" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="284dp"
+        android:layout_marginBottom="188dp"
         android:text="선택"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@id/spinner"
@@ -41,13 +40,13 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.651" />
+        app:layout_constraintVertical_bias="0.63" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="108dp"
         android:text="선택"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@id/spinner"
@@ -63,13 +62,13 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        app:layout_constraintVertical_bias="0.723" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="32dp"
         android:text="선택"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@id/spinner"
@@ -82,7 +81,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginEnd="160dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="100dp"
         android:text="보내기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
